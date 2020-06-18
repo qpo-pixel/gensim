@@ -1591,6 +1591,7 @@ class ReconstructionEvaluation(object):
             (metric_name, metric_value) pairs, e.g. {'mean_rank': 50.3, 'MAP': 0.31}.
 
         """
+        print("Hello")
         mean_rank, map_ = self.evaluate_mean_rank_and_map(max_n)
         return {'mean_rank': mean_rank, 'MAP': map_}
 
